@@ -1,5 +1,7 @@
 # mcp-prometheus
 
+[![CI](https://github.com/AmeesAnsari/mcp-prometheus/actions/workflows/ci.yml/badge.svg)](https://github.com/AmeesAnsari/mcp-prometheus/actions/workflows/ci.yml) ![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 An [MCP](https://modelcontextprotocol.io) server that gives any AI client **read-only** access to Prometheus: find metrics, run PromQL, see how things changed over time, and check scrape health and firing alerts.
 
 Results are **summarised for an LLM**: series are capped, range queries are downsampled to a fixed number of points, and each series leads with min/max/avg/last. A question about latency costs a few hundred tokens instead of megabytes of JSON.
